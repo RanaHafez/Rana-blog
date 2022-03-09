@@ -182,7 +182,7 @@ def about():
     return render_template("about.html", current_user=current_user)
 
 
-@app.route("/contact")
+@app.route("/contact", methods=["POST", "GET"])
 def contact():
     return render_template("contact.html", current_user=current_user)
 
